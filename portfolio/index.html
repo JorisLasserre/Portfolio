@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet " href="style.css">
+    <script src="https://kit.fontawesome.com/5ade61bb68.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Syloti+Nagri&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <title>Lasserre Joris - Accueil</title>
+</head>
+
+<body>
+
+    <script>
+       document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
+
+
+    </script>
+    <header id="header">
+        <div class="col1">
+
+            <div class="profile">
+                <img src="Pictures/menu_picture.png" alt="" class="img-fluid rounded-circle">
+                <h1 class="text-light">Joris Lasserre</h1>
+                <p>Je suis étudiant en <span class="orange">Informatique</span> à l'IUT de Bordeaux. Bienvenue sur mon site !
+                </p>
+                <hr>
+            </div>
+
+            <nav class="nav-menu ">
+                <ul>
+                    <li><a href="index.html" class="nav-link"><i style="color: #D67553" class="fa-solid fa-house"></i>
+                            <span>Accueil</span></a>
+                    </li>
+                    <li><a href="about.html" class="nav-link"><i class="fa-solid fa-user"></i>
+                            <span>  À propos</span></a></li>
+                    <li><a href="work.html" class="nav-link"><i class="fa-solid fa-image"></i> <span>Portfolio</span></a>
+                    </li>
+                    <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i>
+                            <span>Contact</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <section id="top-picture">
+
+        <div id="top-box">
+            <h1>Vos bonnes idées n'ont besoin que d'une <span class="orange">chose</span> :</h1> <br>
+            <h3>être <span class="auto-type"></span></h3>
+
+
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                <script>
+                    var typed = new Typed(".auto-type", {
+                        strings: ["développées", "designées", "codées", "partagées"], typeSpeed: 150, backSpeed: 150, loop: true
+                    })
+
+                </script>
+                <div class="buttons">
+                    <a class="button-a " href=""><i class="fa-solid fa-circle-arrow-right"></i>Me contacter</a>
+
+                 
+      
+                    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+                    <script>
+                        var scroll = new SmoothScroll('a[href*="#"]',{
+                            speed:800
+                        });
+                    </script>
+
+                </div>
+                
+        </div>
+
+    </section>
+
+
+    <main>
+        <section class="basic-section">
+
+            <div class="col1">
+                <h1>Portfolio</h1>
+                <p>J'ai durant mon parcours réalisé un certain nombre de projet, certains scolaires tandis que d'autre personnel. Vous pouvez voir-ci contre mes réalisations</p>
+                <div class="buttons">
+                    <a class="button-a " href=""><i class="fa-solid fa-circle-arrow-right"></i>Voir mon portfolio</a>
+                </div>  
+            </div>
+            <div class="col2">
+                
+                <img src="Pictures/forestbackground.jpg" alt="jsp" style="width: 100%;">
+            </div>
+
+      
+          
+           
+        </section>
+    
+    
+        <section class="basic-section">
+            <h1>A propos de moi</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia veniam aperiam saepe praesentium, similique repellendus earum dolores eaque ullam rerum facilis libero perferendis ex debitis aspernatur dolorem deserunt vel dolore. </p>
+        </section>
+
+        <section class="basic-section">
+            <h1>Me contacter</h1>
+            <p>Pour plus d'informations me contacter.</p>
+        </section>
+      
+    </main>
+    
+
+</body>
+
+</html>

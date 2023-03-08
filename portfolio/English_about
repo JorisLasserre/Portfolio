@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet " href="style.css">
+    <script src="https://kit.fontawesome.com/5ade61bb68.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Syloti+Nagri&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <title>Lasserre Joris - About me</title>
+</head>
+
+<body>
+
+
+    <header id="header">
+        <div class="col1">
+
+            <div class="profile">
+                <img src="Pictures/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+                <h1 class="text-light">Joris Lasserre</h1>
+                <p>I'm a <span class="orange">computer science</span> student at the IUT of Bordeaux. Enjoy your visit on my website !
+                </p>
+                <hr>
+            </div>
+
+            <nav class="nav-menu ">
+                <ul>
+                    <li><a href="main.html" class="nav-link"><i class="fa-solid fa-house"></i> <span>Home</span></a>
+                    </li>
+                    <li><a href="about.html" class="nav-link"><i style="color: #D67553" class="fa-solid fa-user"></i>
+                            <span> About</span></a></li>
+                    <li><a href="work.html" class="nav-link"><i class="fa-solid fa-image"></i> <span>My work</span></a>
+                    </li>
+                    <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i>
+                            <span>Contact</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="section-about">
+            <div class="col1">
+                <h1>
+                    Joris Lasserre
+                </h1>
+                <h3>Computer Science Student</h3>
+                <p>My name is Joris Lasserre, I am 18 years old and I study computer science at the IUT of Bordeaux. Passionate about computer science since I received my first computer, I'm constantly looking to learn new things in this field. 
+                    I'm currently interested in technologies that revolve around web development/web design. Want to know more ? Check my <span class="orange">portfolio</span> and my <span class="orange">resume</span> 
+                </p>
+                <div class="buttons">
+                    <a class="button-a " href=""><i class="fa-solid fa-circle-arrow-right"></i>View portfolio</a>
+                    <a class="button-b " href=""><i class="fa-solid fa-file-lines"></i> View resume</a>
+                </div>
+                
+            </div>
+
+
+            <div class="col2">
+                <img src="Pictures/jorislasserre.jpg" alt="photographie de Joris lasserre en costume">
+            </div>
+        </section>   
+    </main>
+
+
+</body>
+
+</html>
