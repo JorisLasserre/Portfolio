@@ -9,7 +9,8 @@
     <script src="https://kit.fontawesome.com/5ade61bb68.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+Syloti+Nagri&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
@@ -17,10 +18,10 @@
     <title>Lasserre Joris - Projet Odomo</title>
 </head>
 
-<body>
+<body class="workbody">
 
     <script>
-       document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
+        document.body.addEventListener('touchmove', function (e) { e.preventDefault(); });
 
 
     </script>
@@ -28,9 +29,10 @@
         <div class="col1">
 
             <div class="profile">
-                <img src="Pictures/menu_picture.png" alt="" class="img-fluid rounded-circle">
+                <img src="../Pictures/menu_picture.png" alt="" class="img-fluid rounded-circle">
                 <h1 class="text-light">Joris Lasserre</h1>
-                <p>Je suis étudiant en <span class="orange">Informatique</span> à l'IUT de Bordeaux. Bienvenue sur mon site !
+                <p>Je suis étudiant en <span class="orange">Informatique</span> à l'IUT de Bordeaux. Bienvenue sur mon
+                    site !
                 </p>
                 <hr>
             </div>
@@ -41,8 +43,9 @@
                             <span>Accueil</span></a>
                     </li>
                     <li><a href="../about.html" class="nav-link"><i class="fa-solid fa-user"></i>
-                            <span>  À propos</span></a></li>
-                    <li><a href="../work.html" class="nav-link"><i class="fa-solid fa-image"></i> <span>Portfolio</span></a>
+                            <span> À propos</span></a></li>
+                    <li><a href="../work.html" class="nav-link"><i style="color: #D67553" class="fa-solid fa-image"></i>
+                            <span>Portfolio</span></a>
                     </li>
                     <li><a href="../contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i>
                             <span>Contact</span></a></li>
@@ -51,17 +54,44 @@
         </div>
     </header>
 
-    
-        <main>
-            <div class="row">
-                <div class="retex_title">
-                    
-                    <h1>Odomo</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto in, odit perferendis maiores, magni. Qui omnis fuga ut voluptatem.</p>
-                </div>
 
+    <main class="all_retex">
+        <div class="zerow" style="flex-direction: row;">
+            <div class="retex_title">
+                <a href="../work.html"><i class="fa-solid fa-chevron-left"></i></a>
+                <h1>Odomo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto in, odit perferendis maiores,
+                    magni. Qui omnis fuga ut voluptatem.</p>
             </div>
-        </main>
-        
 
-    </body>
+          
+
+                <div class="information_card">
+                    <div class="col1">
+                        <h3>Information sur le projet</h3>
+                        <hr>
+                        <ul>
+                            <li><i class="fa-solid fa-gears"></i>Catégorie : Application console</li>
+                            <li><i class="fa-solid fa-code"></i>Langages : Java</li>
+                            <li><i class="fa-solid fa-calendar-days"></i> Date : Novembre 2022</li>
+                            <li><i class="fa-solid fa-users"></i>Taille d'équipe : Seul</li>
+                        </ul>
+                    </div>
+
+                    <div class="col2">
+                        <img class="img_preuve" src="../Pictures/odomo_screen1.png" ">
+                    </div>
+            </div>
+
+            <div class="ligne">
+                <h3>Description du projet</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium blanditiis tempora aliquam, inventore sunt, dolorum sequi quas esse ducimus quos alias eaque exercitationem illum molestias, vel nisi quia quisquam atque?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium sed voluptas maxime sint sapiente architecto, eveniet tenetur deleniti rerum, consectetur maiores dolorum eos eius quaerat voluptates omnis magnam, neque quam.
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+
+</body>
