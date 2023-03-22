@@ -274,65 +274,88 @@ a{
   /* |                 |  */
  
 
-  /*section 1*/
-
-#section-about:nth-child(odd){
-  background-color: #f5f8fd;
-}
-
-  #section-about{
-    
+  .logo{
     display: flex;
-    padding: 3rem 3rem 3rem 3rem;
-    margin-left: 280px;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .logo img{
+    margin-left: 5px;
+  }
+
+  .logo img:nth-child(1){
+    margin-left: 0;
+  }
+
+  .logo h2{
+    margin-bottom: 18px;
+  }
+  .jojo_about{
+    display: flex;
+    justify-content: center;
+  }
+
+  .jojo_about img{
+    max-width: 666px;
+    width: 100%;
+  }
+
+  .images img{
+    width: 5%;
+    height: 5%;
+  }
+
+
   
-  }
-
-  #section-about h1{
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 3rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-
-  #section-about h3{
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin-top: -0.3%;
-    margin-bottom: 1rem ;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-
-  #section-about p{
-    font-weight: 400;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-
-  #section-about img{
-    max-width: 300px;
-    height: 280px;
-    margin-left: 2em;
-    opacity: 0.85;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+    #section-about{
+      
+      display: flex;
+     
     
-}
-
-#section-about img:hover{
-    opacity: 1;
-}
-
-  #section-about .col1{
-    flex: 4 ;
-    max-width: 85%;
-    text-align: justify;
-
+    }
+  
+    #section-about h1{
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 3rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  
+    #section-about h3{
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin-top: -0.3%;
+      margin-bottom: 1rem ;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  
+    #section-about p{
+      font-weight: 400;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  
+    #section-about img{
+      max-width: 300px;
+      height: 280px;
+      margin-left: 2em;
   }
-  #section-about .col2{
-    flex: 4;
-    max-width: 200px;
-    padding-right:7rem ;
-  }
+
+  
+    #section-about .col1{
+      flex: 4 ;
+      max-width: 85%;
+      text-align: justify;
+  
+    }
+    #section-about .col2{
+      flex: 4;
+      max-width: 200px;
+      padding-right:7rem ;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
 /*tous les boutons de la seciton 1*/
 .buttons{
@@ -605,7 +628,9 @@ overflow: hidden;
 
 .ligne{
   text-align: justify;
+  margin-top: 2rem;
 }
+
 
 @media screen and (max-width: 1220px){
   .row{
@@ -627,7 +652,7 @@ overflow: hidden;
 @media screen and (max-width: 1020px) {
   
 
-  #header, .basic-section, #top-picture, #section-about {
+  #header, .basic-section, #top-picture {
     position: relative;
     left: -280px;
   }
@@ -657,6 +682,7 @@ overflow: hidden;
     justify-content: center;
     position: relative;
     width: 100%;
+  
   }
 
   #section-about .col1{
@@ -664,7 +690,14 @@ overflow: hidden;
   }
   #section-about img{
     margin-top: 30px;
+    margin-left: 0;
   }
+
+  .logo img{
+    width: 10%;
+    width: 10%;
+  }
+
 
 
 .basic-section{
@@ -693,6 +726,20 @@ overflow: hidden;
     flex: 100%;
     max-width: 100%;
   }
+  .buttons{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 15em;  
+  }
+
+  .button-a{
+    margin-bottom: 10px;
+  }
+
+  .button-b{
+    max-width: 225px;
+  }
 }
 @media screen and (max-height: 580px) {
   #top-box{
@@ -701,6 +748,8 @@ overflow: hidden;
   }
   .buttons{
     margin-top: 0;
+    display: flex;
+    align-items: center;
   }
 
 
@@ -739,7 +788,7 @@ overflow: hidden;
   
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 3rem;
-  font-weight: 600;
+  
   color: #292929;
 }
 
@@ -1025,3 +1074,6 @@ hr {
     width: 99%;
   }
 }
+
+
+

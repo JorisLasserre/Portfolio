@@ -5,39 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet " href="style.css">
     <script src="https://kit.fontawesome.com/5ade61bb68.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+Syloti+Nagri&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
 
-    <title>Lasserre Joris - About me</title>
+    <title>Lasserre Joris - Portfolio</title>
 </head>
 
-<body>
+<body class="workbody">
+
 
     <header id="header">
         <div class="col1">
 
             <div class="profile">
                 <img src="Pictures/menu_picture.png" alt="" class="img-fluid rounded-circle">
-                <h1>Joris Lasserre</h1>
-                <p>Je suis étudiant en <span class="orange">Informatique</span> à l'IUT de Bordeaux. Bienvenue sur mon site !
+                <h1 class="text-light">Joris Lasserre</h1>
+                <p>Je suis étudiant en <span class="orange">Informatique</span> à l'IUT de Bordeaux. Bienvenue sur mon
+                    site !
                 </p>
                 <hr>
             </div>
 
             <nav class="nav-menu ">
                 <ul>
-                    <li><a href="index.html" class="nav-link"><i  class="fa-solid fa-house"></i>
+                    <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i>
                             <span>Accueil</span></a>
                     </li>
-                    <li><a href="about.html" class="nav-link"><i style="color: #D67553" class="fa-solid fa-user"></i>
+                    <li><a href="about.html" class="nav-link"><i style="color: #D67553"class="fa-solid fa-user"></i>
                             <span> À propos</span></a></li>
-                    <li><a href="work.html" class="nav-link"><i class="fa-solid fa-image"></i> <span>Portfolio</span></a>
+                    <li><a href="work.html" class="nav-link"><i class="fa-solid fa-image"></i>
+                            <span>Portfolio</span></a>
                     </li>
                     <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i>
                             <span>Contact</span></a></li>
@@ -45,31 +50,58 @@
             </nav>
         </div>
     </header>
+
     <main>
-        <section id="section-about">
-            <div class="col1">
-                <h1>
-                    Joris Lasserre
-                </h1>
-                <h3>Étudiant en Informatique</h3>
-                <p>Je m'appelle Joris Lasserre, j'ai 18 ans et j'étudie l'informatique à l'IUT de Bordeaux. Je suis passionné par l'informatique depuis que j'ai reçu mon premier ordinateur, je suis constamment en train de m'informer dans ce domaine. 
-                    Actuellement je m'interesse à tous ce qui tourne autour du développement web et du web design. Vous voulez en savoir plus ? Jetez un oeil à mon <span class="orange">Portfolio</span> et mon <span class="orange">CV</span> 
-                </p>
-                <div class="buttons">
-                    <a class="button-a " href=""><i class="fa-solid fa-circle-arrow-right"></i>Voir mon portfolio</a>
-                    <a class="button-b " href=""><i class="fa-solid fa-file-lines"></i> Voir mon CV</a>
-                </div>
-                
-            </div>
-
-
-            <div class="col2">
-                <img src="Pictures/jorislasserre.jpg" alt="photographie de Joris lasserre en costume">
-            </div>
-        </section>   
-
-
         
+        <div class="zerow" >
+            
+              
+                <section id="section-about">
+                    <div class="col1">
+                        <h1>
+                            Joris Lasserre
+                        </h1>
+                        <h3>Étudiant en Informatique</h3>
+                        <p>Je m'appelle Joris Lasserre, j'ai 18 ans et j'étudie l'informatique à l'IUT de Bordeaux. Je suis passionné par l'informatique depuis que j'ai reçu mon premier ordinateur, je suis constamment en train de m'informer dans ce domaine. 
+                            Actuellement je m'interesse à tous ce qui tourne autour du développement web et du web design. Vous voulez en savoir plus ? Jetez un oeil à mon <span class="orange">Portfolio</span> et mon <span class="orange">CV</span> 
+                        </p>
+                        <div class="buttons">
+                            <a class="button-a " href="work.html"><i class="fa-solid fa-circle-arrow-right"></i>Voir mon portfolio</a>
+                            <a class="button-b " href=""><i class="fa-solid fa-file-lines"></i> Voir mon CV</a>
+            </div>
+                    </div>
+                    <div class="col2">
+                        <img src="Pictures/jorislasserre.jpg" alt="photographie de Joris lasserre en costume">
+                    </div>
+                </section>
+                
+               
+
+           
+                <div class="logo">
+                    <h2>Mes langages</h2>
+                   <div class="images"
+                   ><img src="Pictures/icones/html.png" alt="html5">
+                    <img src="Pictures/icones/css.png" alt="css">
+                    <img src="Pictures/icones/sql.png" alt="sql">
+                    <img src="Pictures/icones/java.png" alt="java">
+                    <img src="Pictures/icones/Python.png" alt="python">
+                    <img src="Pictures/icones/csharp.png" alt="csharp">
+                    <img src="Pictures/icones/bash.png" alt="bash">
+                </div>
+    
+                <div class="logo">
+                    <h2>Mes outils</h2>
+                   <div class="images">
+                    <img src="Pictures/icones/git.png" alt="git">
+                    <img src="Pictures/icones/netbeans.png" alt="netbeans">
+                    <img src="Pictures/icones/vmware.png" alt="vmware">
+                    <img src="Pictures/icones/vscode.png" alt="vscode">
+                    <img src="Pictures/icones/windesign.png" alt="windesign">
+                   
+               </div>
+                
+        </div>
     </main>
 
 
