@@ -337,30 +337,31 @@ a{
   
     #section-about img{
       max-width: 300px;
-      height: 280px;
+      max-height: 350px;
       margin-left: 2em;
   }
 
   
-    #section-about .col1{
-      flex: 4 ;
-      max-width: 85%;
-      text-align: justify;
-  
-    }
+  #section-about .col1 {
+    flex: 4;
+ 
+    padding-right: 15px;
+    text-align: justify;
+}
     #section-about .col2{
-      flex: 4;
-      max-width: 200px;
-      padding-right:7rem ;
+  
+      
+     
       display: flex;
       align-items: center;
       flex-wrap: wrap;
     }
 
 /*tous les boutons de la seciton 1*/
-.buttons{
-    margin-top: 3rem;
-    display: flex;
+.buttons {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
  .button-a{
@@ -372,6 +373,7 @@ a{
     margin-right: 15px;
     font-weight: 600;
     box-shadow: #292929;
+    margin-top: 10px;
     transition: background-color 0.25s ease-in-out,border-color 0.35s ease-in-out
  }  
 
@@ -391,7 +393,8 @@ a{
     border-radius: 5px;
     font-weight: 600;
     box-shadow: #292929;
-    transition: background-color 0.25s ease-in-out,border-color 0.35s ease-in-out
+    transition: background-color 0.25s ease-in-out,border-color 0.35s ease-in-out;
+    margin-top: 10px;
  }
  .button-b:hover{
     border: 1px  #4f4f4f solid;
@@ -649,7 +652,8 @@ overflow: hidden;
 
 
 
-@media screen and (max-width: 1020px) {
+
+@media screen and (max-width: 1050px) {
   
 
   #header, .basic-section, #top-picture {
@@ -686,8 +690,18 @@ overflow: hidden;
   }
 
   #section-about .col1{
-    max-width: 85%;
+    max-width: 100%;
   }
+
+  #section-about .col2 {
+    flex: 4;
+    /* max-width: 200px; */
+    /* padding-right: 7rem; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
   #section-about img{
     margin-top: 30px;
     margin-left: 0;
@@ -730,8 +744,61 @@ overflow: hidden;
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
-    width: 15em;  
+    align-items: center;
   }
+
+  .button-a {
+    background-color: #D67553;
+    color: #fff;
+    border: 1px #D67553 solid;
+    padding: 9px;
+    padding-right: 0;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 0;
+    font-weight: 600;
+    box-shadow: #292929;
+    margin-top: 20px;
+    transition: background-color 0.25s ease-in-out,border-color 0.35s ease-in-out;
+}
+
+.button-b{
+  width: 200px;
+  padding-right: 0;
+}
+
+  #section-about img {
+    max-width: 300px;
+    max-height: 350px;
+}
+
+#section-about .col1 {
+  flex: 4;
+  max-width: 100%;
+  text-align: justify;
+}
+
+  .zerow {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 1em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    padding: 1em 2em 2em 2em;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.retex_title i {
+  color: #292929;
+  text-align: left;
+  z-index: 2;
+  font-size: 1.5em;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 0;
+}
 
   .button-a{
     margin-bottom: 10px;
