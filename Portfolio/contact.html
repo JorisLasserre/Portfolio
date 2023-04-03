@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet " href="style.css">
+    <script src="https://kit.fontawesome.com/5ade61bb68.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Syloti+Nagri&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <title>Lasserre Joris - Contact</title>
+
+</head>
+
+<body class="workbody">
+
+    <script>
+       document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
+
+
+    </script>
+    <header id="header">
+        <div class="col1">
+
+            <div class="profile">
+                <img src="Pictures/menu_picture.png" alt="" class="img-fluid rounded-circle">
+                <h1 class="text-light">Joris Lasserre</h1>
+                <p>Je suis étudiant en <span class="orange">Informatique</span> à l'IUT de Bordeaux. Bienvenue sur mon site !
+                </p>
+                <hr>
+            </div>
+
+            <nav class="nav-menu ">
+                <ul>
+                    <li><a href="index.html" class="nav-link"><i  class="fa-solid fa-house"></i>
+                            <span>Accueil</span></a>
+                    </li>
+                    <li><a href="work.html" class="nav-link"><i class="fa-solid fa-image"></i>
+                      <span>Portfolio</span></a>
+              </li>
+                    <li><a href="about.html" class="nav-link"><i class="fa-solid fa-user"></i>
+                            <span>  À propos</span></a></li>
+                    
+                    <li><a href="contact.html" class="nav-link"><i style="color: #D67553" class="fa-solid fa-envelope"></i>
+                            <span>Contact</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+        <main>
+            <div class="zerow">
+
+           
+              <section id="contact">
+  
+                <h1 class="section-header">Contact</h1>
+                <h2>Pour toutes questions n'hésitez pas à me contacter</h2>
+                <div class="contact-wrapper">
+                
+                <!-- Left contact page --> 
+                  
+                  <form id="contact-form" class="form-horizontal" role="form" action="https://formspree.io/f/moqznkqn"
+                  method="POST">
+                     
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <input type="text" class="form-control" id="name" placeholder="Votre nom" name="name" value="" required>
+                      </div>
+                    </div>
+              
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <input type="email" class="form-control" id="email" placeholder="Exemple@mail.com" name="email" value="" required>
+                      </div>
+                    </div>
+              
+                    <textarea class="form-control" rows="10" placeholder="Votre message" name="message" required></textarea>
+                    
+                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                      
+                       <span class="send-text">Envoyer</span>
+                   
+                    
+                    </button>
+
+                  </form>
+                  
+                <!-- Right contact page --> 
+                  
+                    <div class="direct-contact-container">
+              
+                      <ul class="contact-list">
+                        <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Bordeaux, France</span></i></li>
+                        
+                        <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:00 00 00 00 00" title="Appelez-moi">00 00 00 00 00</a></span></i></li>
+                        
+                        <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:jl.jorislasserre@gmail.com?subject=Débuter la conversation" title="Envoyez-moi un mail">jl.jorislasserre@gmail.com</a></span></i></li>
+                        
+                      </ul>
+              
+                      <hr>
+                      <ul class="social-media-list">
+                        <li><a href="#" target="_blank" class="contact-icon">
+                          <i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="#" target="_blank" class="contact-icon">
+                          <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="#" target="_blank" class="contact-icon">
+                          <i class="fa-brands fa-discord" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="#" target="_blank" class="contact-icon">
+                          <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>       
+                      </ul>
+                      <hr>
+              
+                      <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+              
+                    </div>
+                  
+                </div>
+                
+              </section>  
+                
+                
+            </div>
+
+        </main>
+        
+
+
+</body>
