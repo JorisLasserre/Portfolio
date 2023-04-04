@@ -293,7 +293,8 @@ h1::-moz-selection {
 }
 
 .headerWrapper h6 {
-  animation: 1s fadeIn ease;
+  animation: 1.5s fadeInTitle ease;
+  transition: transform 0.5s ease-out;
   font-weight: 700;
 }
 
@@ -301,6 +302,7 @@ h1::-moz-selection {
   0% {
     opacity: 0;
   }
+
 
   100% {
     opacity: 1;
@@ -331,6 +333,8 @@ h1::-moz-selection {
   border-top: #D67553 solid 2px;
   color: #D67553;
   margin-top: 1em;
+  animation: 1.5s fadeInTitle ease;
+  transition: transform 0.5s ease-out;
 }
 
 .headerWrapper h1 {
@@ -348,9 +352,12 @@ h1::-moz-selection {
   margin-left: 4em;
   margin-right: 4em;
   margin-top: 1.3em;
+  text-align: justify;
   display: flex;
   align-items: flex-start;
     flex-direction: column;
+    animation: 1.5s fadeInTitle ease;
+    transition: transform 0.5s ease-out;
 }
 
 
@@ -369,18 +376,22 @@ h1::-moz-selection {
     font-weight: 900;
     font-family: 'Satoshi', sans-serif;
     color: #272727;
+    animation: 1.5s fadeInTitle ease;
+    transition: transform 0.5s ease-out;
   }
 
   .parent p{
     margin-top: 0.5em;
     text-align: justify;
     padding-right: 1em;
-   
+    animation: 1.5s fadeInTitle ease;
+    transition: transform 0.5s ease-out;
   }
   
   .div1 { 
     
-   
+    animation: 1.5s fadeInTitle ease;
+    transition: transform 0.5s ease-out;
     grid-area: 1 / 1 / 6 / 3; 
     border-right: #292929 solid 3px;
     
@@ -392,11 +403,13 @@ h1::-moz-selection {
       border-bottom: #292929 solid 3px;
       border-top: #292929 solid 3px;
       padding:1em 1em 1em;
-      
+      animation: 1.5s fadeInTitle ease;
+      transition: transform 0.5s ease-out;
     }
   .div3 { 
     grid-area: 3 / 3 / 6 / 6; 
-   
+    animation: 1.5s fadeInTitle ease;
+    transition: transform 0.5s ease-out;
     padding:1em 1em 1em;
     display: flex;
     flex-direction: column;
@@ -422,7 +435,7 @@ h1::-moz-selection {
     margin-top: 2.5em;
     width: 100px;
   background-color: #D67553;
-  color: rgba(255, 255, 255, .85);
+  color: white;
   padding: 10px 10px;
   border-radius: 10px;
   font-size: 16px;
@@ -434,8 +447,12 @@ h1::-moz-selection {
     background-color: #cf582d;
   }
 
+  .main-button a{
+    color: white;
+  }
+
   .main-button a:visited{
-   color: #f5f8fd;
+    color: white;
    text-decoration: none;
   }
 
@@ -903,7 +920,6 @@ h1::-moz-selection {
   }
 
   .zerow {
-
     margin-left: 1em;
   }
 }
@@ -957,6 +973,12 @@ h1::-moz-selection {
     align-items: center;
   }
 
+  #intro{
+    padding-left: 1em;
+    padding-right: 1em;
+    
+  }
+
   .button-a {
     background-color: #D67553;
     color: #fff;
@@ -976,6 +998,8 @@ h1::-moz-selection {
     width: 200px;
     padding-right: 0;
   }
+
+  
 
   #section-about img {
     max-width: 300px;
@@ -1430,7 +1454,7 @@ hr {
   font-family: Helvetica, "sans-serif";
   transition: all .2s;
   padding: 10px 20px;
-
+  color: white;
   background: #D67553;
   border: 1px solid transparent;
   display: flex;
@@ -1443,6 +1467,9 @@ hr {
   margin-left: -5px;
 }
 
+.btn:visited{
+  color: white;
+}
 
 .btn:hover {
   background: #cf582d;
@@ -1465,7 +1492,8 @@ hr {
 .quote {
   
   background-color: #292929;
-  
+  animation: 1.5s fadeInTitle ease;
+  transition: transform 0.5s ease-out;
   flex: 1;
 
 
