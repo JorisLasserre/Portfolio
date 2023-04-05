@@ -59,7 +59,7 @@
     
         <main>
             <div class="zerow">
-
+              <button id="hamburger-btn">&#9776;</button>
            
               <section id="contact">
   
@@ -137,7 +137,13 @@
             </div>
 
         </main>
-        
+        <script>const hamburgerBtn = document.getElementById("hamburger-btn");
+          const menu = document.getElementById("header");
+          
+          hamburgerBtn.addEventListener("click", () => {
+      
+            menu.classList.toggle("show");
+          });</script>
 
 
 </body>

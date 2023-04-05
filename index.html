@@ -25,7 +25,6 @@
     
     <header id="header">
         <div class="col1">
-            
             <div class="profile">
                 <img src="Pictures/menu_picture.png" alt="" class="img-fluid rounded-circle">
                 <h1 class="text-light">Joris Lasserre</h1>
@@ -53,11 +52,13 @@
     </header>
     
     <main>
-
+        
         <div class="zerow" style="padding: 4em 0em 4em 0em;">
 
 
-
+            <button id="hamburger-btn">&#9776;</button>
+            
+             
             <div class="headerWrapper">
 
                 <h1 >Lasserre Joris </h1>
@@ -129,6 +130,13 @@
             console.log('callback - particles.js config loaded');
         });
     </script>
+    <script>const hamburgerBtn = document.getElementById("hamburger-btn");
+        const menu = document.getElementById("header");
+        
+        hamburgerBtn.addEventListener("click", () => {
+    
+          menu.classList.toggle("show");
+        });</script>
 </body>
 
 </html>

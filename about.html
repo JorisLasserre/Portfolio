@@ -58,6 +58,7 @@
         <div class="zerow" >
 
          
+            <button id="hamburger-btn">&#9776;</button>
             
               
                 <section id="section-about">
@@ -106,8 +107,16 @@
                </div>
                 
         </div>
+        
+        <script>const hamburgerBtn = document.getElementById("hamburger-btn");
+            const menu = document.getElementById("header");
+            
+            hamburgerBtn.addEventListener("click", () => {
+        
+              menu.classList.toggle("show");
+            });</script>
     </main>
-
+    
 
 </body>
 
