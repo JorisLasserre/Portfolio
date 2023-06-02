@@ -525,7 +525,9 @@ h1::-moz-selection {
   
 }
 
-
+#ee:hover{
+  cursor: default;
+}
 
 #section-about {
 
