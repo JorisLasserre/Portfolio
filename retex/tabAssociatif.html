@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet " href="../style.css" />
+    <script
+      src="https://kit.fontawesome.com/5ade61bb68.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="color-scheme" content="only light" />
+    <link rel="icon" type="image/png" href="../Pictures/jl.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Syloti+Nagri&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Lasserre Joris - Projet Ordinat'R</title>
+  </head>
+
+  <body class="workbody">
+    <script>
+      document.body.addEventListener("touchmove", function (e) {
+        e.preventDefault();
+      });
+    </script>
+    <header id="header">
+      <div class="col1">
+        <div class="profile">
+          <img
+            src="../Pictures/profile-pic2.png"
+            alt=""
+            class="img-fluid rounded-circle"
+          />
+          <h1 class="text-light">Joris Lasserre</h1>
+          <p>
+            Je suis étudiant en <span class="orange">Informatique</span> à l'IUT
+            de Bordeaux. Bienvenue sur mon site !
+          </p>
+          <hr />
+        </div>
+
+        <nav class="nav-menu">
+          <ul>
+            <li>
+              <a href="../index.html" class="nav-link"
+                ><i class="fa-solid fa-house"></i> <span>Accueil</span></a
+              >
+            </li>
+            <li>
+              <a href="../work.html" class="nav-link"
+                ><i style="color: #d67553" class="fa-solid fa-image"></i>
+                <span>Portfolio</span></a
+              >
+            </li>
+            <li>
+              <a href="../about.html" class="nav-link"
+                ><i class="fa-solid fa-user"></i> <span> À propos</span></a
+              >
+            </li>
+            <li>
+              <a href="../contact.html" class="nav-link"
+                ><i class="fa-solid fa-envelope"></i> <span>Contact</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="all_retex">
+      <div class="zerow" style="flex-direction: row">
+        <button id="hamburger-btn">&#9776;</button>
+        <div class="retex_title">
+          <a href="../work.html"><i class="fa-solid fa-chevron-left"></i></a>
+          <h1>Tableau Associatif Java</h1>
+          <p>
+            Réimplémenter des tableaux associatifs en Java de 2 manières
+            différentes.
+          </p>
+        </div>
+
+        <div class="information_card">
+          <div class="col1">
+            <h3>Information sur le projet</h3>
+            <hr />
+            <ul>
+              <li>
+                <i class="fa-solid fa-gears"></i>Catégorie : Réimplémentation
+              </li>
+              <li><i class="fa-solid fa-code"></i>Langages : Java</li>
+              <li>
+                <i class="fa-solid fa-calendar-days"></i> Date : Novembre 2023
+              </li>
+              <li><i class="fa-solid fa-users"></i>Taille d'équipe : seul</li>
+            </ul>
+          </div>
+
+          <div class="col2">
+            <img
+              class="img_preuve"
+              src="../Pictures/openAddressing1.png"
+              alt="screen_ordinater"
+            />
+          </div>
+        </div>
+
+        <div class="ligne">
+          <h3>Description du projet</h3>
+          <p>
+            Lors de ce projet j'ai appris à réimplémenter les tableaux
+            associatifs de Java. J'ai réalisé deux implémentations différentes,
+            une avec des arrayLists et l'autre avec à la manière Open Adressing.
+            J'ai ensuite comparé les temps d'execution de ces deux
+            implémentations pour des tableaux de taille variable.
+          </p>
+          <br />
+        </div>
+      </div>
+      <script>
+        const hamburgerBtn = document.getElementById("hamburger-btn");
+        const menu = document.getElementById("header");
+
+        hamburgerBtn.addEventListener("click", () => {
+          menu.classList.toggle("show");
+        });
+      </script>
+    </main>
+  </body>
+</html>
